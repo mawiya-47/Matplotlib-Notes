@@ -55,12 +55,12 @@ function Hero() {
         <Hero3D />
       </div>
       <div className="absolute inset-0 z-[1] bg-gradient-to-t from-paper via-paper/40 to-transparent pointer-events-none" />
-      <div className="absolute top-28 left-6 md:left-10 z-[2] max-w-xs hidden lg:block">
+      <div className="absolute bottom-6 right-6 md:right-10 z-[2] max-w-[15rem] hidden xl:block text-right">
         <motion.p
-          initial={{ opacity: 0, x: -10 }}
+          initial={{ opacity: 0, x: 10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="font-mono text-xs text-olive-600 leading-relaxed"
+          className="font-mono text-[11px] text-olive-600/80 leading-relaxed"
         >
           Z = 9·sin(0.28r)·e<sup>−0.028r</sup> + 3.5·cos(0.12x)·sin(0.12y)
           <br />— the hero surface, rendered live in WebGL
